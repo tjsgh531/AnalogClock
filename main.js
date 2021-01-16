@@ -21,14 +21,14 @@ function moveHand(){
     const min = document.getElementById('min-hand');
     const sec = document.getElementById('sec-hand');
 
-    const date = new Date();
-    const Hdeg = (360/12) * date.getHours() + (360 /12 /60) * date.getMinutes();
-    const Mdeg = (360 /60) * date.getMinutes();
-    const Sdeg = (360 / 60) * date.getSeconds();
+    let date = new Date();
+    let Hdeg = (360/12) * date.getHours() + (360 /12 /60) * date.getMinutes();
+    let Mdeg = (360 /60) * date.getMinutes();
+    let Sdeg = (360 /60) * date.getSeconds();
 
-    hour.style.transform = `rotate(${Hdeg}turn)`;
-    min.style.transform = `rotate(${Mdeg}turn)`;
-    sec.style.transform = `rotete(${Sdeg}turn)`;
+    hour.style.transform = `rotate(${Hdeg}deg)`;
+    min.style.transform = `rotate(${Mdeg}deg)`;
+    sec.style.transform = `rotate(${Sdeg}deg)`;
 }
 
-setInterval(moveHand,5000);
+setInterval(moveHand,50);

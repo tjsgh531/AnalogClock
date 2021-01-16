@@ -62,6 +62,8 @@ main{
   top: calc(50% - 240px);
   left: calc(50% - 5px);
 
+  transform-origin: bottom;
+
   z-index: 1;
 }
 #sec-hand{
@@ -69,6 +71,8 @@ main{
   height: 240px;
 
   background-color: rgb(65, 65, 65);
+
+  transform-origin: bottom;
 
   position: absolute;
   top: calc(50% - 240px);
